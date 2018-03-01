@@ -1,0 +1,51 @@
+/*#circle(){
+  background-color: #4CAF50;
+  border-radius: 100%;
+}
+
+#small-circle{
+  width: 50px;
+  height: 50px;
+  #circle
+}
+
+#big-circle{
+  width: 100px;
+  height: 100px;
+  #circle
+}
+
+
+#circle{
+  background-color: #4CAF50;
+  border-radius: 100%;
+}
+
+#small-circle{
+  width: 50px;
+  height: 50px;
+  #circle 				
+}
+
+#big-circle{
+  width: 100px;
+  height: 100px;
+  #circle
+}
+*/
+
+#circle(@size: 25px){
+  background-color: #4CAF50;
+  border-radius: 100%;
+
+  width: @size;
+  height: @size;
+}
+
+#small-circle{
+  #circle
+}
+
+#big-circle{
+  #circle(100px)
+}

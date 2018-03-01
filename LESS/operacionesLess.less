@@ -1,0 +1,17 @@
+@div-width: 100px;
+@color: #03A9F4;
+
+div{
+  height: 50px;
+  display: inline-block;
+}
+
+#left{
+  width: @div-width;
+  background-color: @color - 100;
+}
+
+#right{
+  width: @div-width * 2;
+  background-color: @color;
+}
