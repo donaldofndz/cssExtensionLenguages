@@ -277,7 +277,7 @@ aside[role="complementary"] {
 ```
 
 
-#SASS intermedio 
+# SASS intermedio 
 
 ## Estructuras de control
 
