@@ -235,12 +235,46 @@ Hay que notar que **%equal-heights** no se muestra porque nunca se usa en la fun
 
 
 
+##Operators 
+
+Dentro de de SASS existe distintos tipos de operadores que nos permiten hacer matematicas con ellos, un ejemplo de esto son los siguientes
+
+```
+.container { width: 100%; }
+
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+```
+
+El resultado tras compilar el codigo anterior será el siguiente 
 
 
 
+```
+.container { width: 100%; }
 
 
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
 
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+
+```
 
 
 
