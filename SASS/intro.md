@@ -1,4 +1,4 @@
-# Sass para principiantes
+# SASS para principiantes
 
 ## Variables 
 
@@ -275,6 +275,205 @@ aside[role="complementary"] {
 
 
 ```
+
+
+#SASS intermedio 
+
+##Estructuras de control
+
+Como en todo lenguaje de programacion SASS soporta estructuras de control básicas, con estas podemos hacer distintos tipos de operaciones 
+
+### Ejemplo IF
+
+```
+
+if(true, 1px, 2px) => 1px
+if(false, 1px, 2px) => 2px
+
+
+```
+
+
+Así como existe if, también existe la estructura de control que siempre la acompaña **if else** 
+
+```
+
+$type: monster;
+
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+```
+
+En el caso anterior, la forma compilada de SASS será: 
+
+```
+p {
+  color: green; }
+
+```
+
+
+#### Ejemplo FOR
+
+
+La estructura de control for sirve para iterar sobre una serie de elementos, un ejemplo de esto es el siguiente 
+
+```
+
+/* Esta sintaxis mostrara 3 elementos */
+
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+
+/* Esta sintaxis mostrara 2 elementos */
+
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+
+```
+
+el resultado del primer codigo será el siguiente 
+
+```
+.item-1 {
+  width: 2em; }
+.item-2 {
+  width: 4em; }
+.item-3 {
+  width: 6em; }
+
+```
+
+
+Dentro de las estructuras de control que tratan de iteraciones existen otras como 
+
+### Ejemplo EACH 
+
+EACH es una forma de iterar sobre un "arreglo", a pesar de que no existen como tal los arreglos, podemos simular uno y haacer uso de la estructura EACH
+
+```
+
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+
+```
+
+
+El resultado de estao será 
+
+```
+
+.puma-icon {
+  background-image: url('/images/puma.png'); }
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png'); }
+.egret-icon {
+  background-image: url('/images/egret.png'); }
+.salamander-icon {
+  background-image: url('/images/salamander.png'); }
+
+
+```
+
+
+### Ejemplo While
+
+Como ya conocemos while es una de las condicionales en buena parte de los lenguajes de programacion, su estructura en SASS es la siguiente
+
+```
+$i: 6;
+
+@while $i > 0 {
+  .item-#{$i} { width: 2em * $i; }
+  $i: $i - 2;
+}
+
+```
+
+
+Y el resultado sería este: 
+
+```
+.item-6 {
+  width: 12em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-2 {
+  width: 4em; }
+
+
+
+```
+
+
+Debido a la trivialidad no se explicará más a detalle 
+
+
+
+##Funciones en SASS 
+
+Aparte de hacer uso de distintas funciones dentro de SASS tambien podemos definir las nuestras y usarlas en cualquier punto de nuetro programa, un ejemplo a continuacion 
+
+```
+
+$grid-width: 40px;
+$gutter-width: 10px;
+
+@function grid-width($n) {
+  @return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+
+#sidebar { width: grid-width(5); }
+
+
+```
+
+Invocamos la funcion dentro de **sidebar**, para poder hacer uso e la funcion **grid-width** a la cual le pasamos el argumento 5 y el resultado de la funcion será el siguiente 
+
+```
+
+#sidebar {
+  width: 240px; }
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
