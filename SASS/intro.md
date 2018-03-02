@@ -28,7 +28,7 @@ body {
 ```
 
 
-##Nesting en Sass
+## Nesting en Sass
 
 Sass tiene una funcionalidad que se llama Nesting, el nesting consiste en la forma en la que se anidan elementos, dicha funcionalidad nos permite tener un mejor manejo del CSS
 
@@ -74,11 +74,11 @@ nav a {
 ```
 
 
-##Partial e Import en Sass
+## Partial e Import en Sass
 
 Al momento de escribir codigo en CSS es recurrente que estos sean extensos y la modularizacion del código un poco tediosas, para estos casos, Sass nos permite utilizar la funcionalidad de **Partials**, un partial es una pequeña parte de codigo reusable que puede ser invocada al codigo principal, sin que el codigo menos sea covertido en css
 
-###Partials
+### Partials
 
 
 Para hacer uso de un snippet hay que seguir los siguientes pasos 
@@ -87,7 +87,7 @@ Para hacer uso de un snippet hay que seguir los siguientes pasos
 2. Ese archivo será llamaado por medio de @import
 
 
-###Import
+### Import
 
 Supongoamos que tener dos archivos 
 
@@ -135,7 +135,7 @@ A pesar de que CSS tiene su propia funcion de import, crea un peticion htttp par
 
 
 
-##Mixin 
+## Mixin 
 
 Este concepto tiene que ver con crear una clase a la que le podemos modificar los atributos mediante el paso de valor, a continuación un ejemplo que dejará este concepto más claro.
 
@@ -167,7 +167,7 @@ El resultado sería
 
 Se pueden pasar varios atributos a la funcion con tal de que sean conosecutivos.
 
-##Extend / Inheritance
+## Extend / Inheritance
 
 Esta propiedad de Sass nos permite como dice, heredar atributos de un elementos CSS a otro, un ejemplo se muestra a continuación: 
 
@@ -235,7 +235,7 @@ Hay que notar que **%equal-heights** no se muestra porque nunca se usa en la fun
 
 
 
-##Operators 
+## Operators 
 
 Dentro de de SASS existe distintos tipos de operadores que nos permiten hacer matematicas con ellos, un ejemplo de esto son los siguientes
 
@@ -279,7 +279,7 @@ aside[role="complementary"] {
 
 #SASS intermedio 
 
-##Estructuras de control
+## Estructuras de control
 
 Como en todo lenguaje de programacion SASS soporta estructuras de control básicas, con estas podemos hacer distintos tipos de operaciones 
 
@@ -427,7 +427,7 @@ Debido a la trivialidad no se explicará más a detalle
 
 
 
-##Funciones en SASS 
+## Funciones en SASS 
 
 Aparte de hacer uso de distintas funciones dentro de SASS tambien podemos definir las nuestras y usarlas en cualquier punto de nuetro programa, un ejemplo a continuacion 
 
