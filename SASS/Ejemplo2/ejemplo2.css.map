@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;EAGG;EACD,MAAM,EAAG,CAAC;EACV,OAAO,EAAE,CAAC;;ACHZ,IAAK;EACH,IAAI,EAAE,0BAA0B;EAChC,gBAAgB,EAAE,OAAO",
+"sources": ["_basico.scss","style.scss"],
+"names": [],
+"file": "ejemplo2.css"
+}

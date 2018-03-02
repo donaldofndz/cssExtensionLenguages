@@ -135,7 +135,7 @@ La desventaja de la forma anterior es que no se creara ninguna clase para el **I
 ## Nesting y Scope en LESS
 
 
-Esta propiedad nos permite crear elementos anidados dentro de nuestro CSS, por ejemplo un <ul> (unorder list) que contenga <li> (list Items)
+Esta propiedad nos permite crear elementos anidados dentro de nuestro CSS, por ejemplo un \<ul\> (unorder list) que contenga \<li\> (list Items)
 
 ```
 
